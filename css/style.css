@@ -1,5 +1,5 @@
 .logounwina {
-  background-color: #122d4f;
+  background-color: #122d4e;
   border: none;
 }
 /* Background tetap & fullscreen */
@@ -84,3 +84,64 @@ body::before {
 .navbar-nav .nav-link:hover {
   color: #e3be83 !important; /* Warna kuning saat hover */
 }
+/* Efek shadow & glow halus */
+.btn-custom {
+  background-color: rgba(0, 123, 255, 0.3);
+  color: #f9f7e4;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover: tambah glow */
+.btn-custom:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Glow biru saat hover */
+}
+
+.ig,
+.ema,
+.fb {
+  display: inline-block;
+}
+.footer {
+  background-color: rgba(18, 45, 79, 0.5); /* Senada dengan navbar */
+  backdrop-filter: blur(10px);
+  color: #f9f7e4;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px 15px 0 0;
+}
+
+.footer h5 {
+  font-weight: bold;
+  color: #e3be83; /* Warna emas seperti hover link */
+}
+
+.footer p {
+  margin: 0;
+  color: #f9f7e4;
+}
+
+.footer-icon i {
+  font-size: 1.5rem;
+  color: #f9f7e4;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icon:hover i {
+  transform: scale(1.2);
+}
+
+/* Hover warna sesuai ikon */
+.footer-icon:nth-child(1):hover i {
+  color: #e1306c;
+} /* Instagram */
+.footer-icon:nth-child(2):hover i {
+  color: #3498db;
+} /* Email */
+.footer-icon:nth-child(3):hover i {
+  color: #1877f2;
+} /* Facebook */
